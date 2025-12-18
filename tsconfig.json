@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "strict": true,
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "noEmit": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@core/*": ["src/core/*"],
+      "@data/*": ["src/data/*"],
+      "@math/*": ["src/math/*"],
+      "@rendering/*": ["src/rendering/*"],
+      "@state/*": ["src/state/*"],
+      "@ui/*": ["src/ui/*"]
+    }
+  },
+  "include": ["src/**/*", "vite.config.ts"],
+  "references": []
+}

@@ -1,0 +1,69 @@
+:root {
+  color: #e8ecf3;
+  background-color: #0c1118;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 30% 20%, rgba(64, 145, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(65, 236, 210, 0.12), transparent 35%),
+    #0c1118;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.info-panel {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: rgba(12, 17, 24, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: #dfe8ff;
+  width: 240px;
+}
+
+.info-top {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.label {
+  color: rgba(223, 232, 255, 0.7);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f2f6ff;
+}
+
+.caption {
+  color: rgba(223, 232, 255, 0.8);
+  font-size: 14px;
+  margin-top: 6px;
+}
